@@ -116,6 +116,15 @@ namespace KID
                 rig.AddForce(new Vector2(0, jump));
             }
         }
+
+        /// <summary>
+        /// °±¤î²¾°Ê
+        /// </summary>
+        public void StopMove()
+        {
+            rig.velocity = Vector2.zero;
+            enabled = false;
+        }
         #endregion
     }
 }
